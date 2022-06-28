@@ -3,10 +3,10 @@ import sys
 
 from scripts.gitignore_parser import parse_gitignore
 
-original_author = "author_name"
-original_name = "project_name"
-original_urlname = "project_urlname"
-original_description = "project_description"
+original_author = "wjshan"
+original_name = "user_role"
+original_urlname = "user-role"
+original_description = "Awesome user_role created by wjshan"
 
 
 def sed(path, origin: str, dest: str) -> None:
@@ -38,7 +38,7 @@ def wait_user_input(message: str, default: str = "") -> str:
 if __name__ == "__main__":
 
     author = wait_user_input("please input auth", default="shujian")
-    name = wait_user_input("please input project_name", default="project_name")
+    name = wait_user_input("please input user_role", default="user_role")
     url_name = wait_user_input("please input url name", default=name)
     description = wait_user_input("please input description", default="")
 

@@ -36,7 +36,7 @@ class BaseError(Exception):
 
     @property
     def detail(self):
-        from project_name.config import settings
+        from user_role.config import settings
         return traceback.format_exc(limit=5) if settings.server.debug else None
 
     def json(self):

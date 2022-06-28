@@ -12,7 +12,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 from starlette.responses import JSONResponse
 
-from project_name.serializers.public_serializer import BaseResponseSerializer
+from user_role.serializers.public_serializer import BaseResponseSerializer
 from .config import settings
 from .exceptions.base_errors import BaseError, ValidateError, UrlNotFindError
 from .routes import main_router
@@ -59,10 +59,10 @@ async def unknown_error_handler(request: Request, exc: Exception):
 
 
 app = FastAPI(
-    title="project_name",
-    description="project_name API helps you do awesome stuff. 🚀",
+    title="user_role",
+    description="user_role API helps you do awesome stuff. 🚀",
     version=read("VERSION"),
-    terms_of_service="http://project_name.com/terms/",
+    terms_of_service="http://user_role.com/terms/",
     # responses={"default": {"model": BaseResponseSerializer}, "200": {"model": BaseResponseSerializer}},
     default_response_class=PublicBaseResponse,
     exception_handlers={

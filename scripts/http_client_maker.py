@@ -4,7 +4,7 @@ import typing
 from fastapi.routing import APIRoute
 from typing import get_type_hints
 
-from project_name.app import app
+from user_role.app import app
 import pydantic
 
 class SignalFuncInfo(object):

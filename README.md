@@ -1,7 +1,7 @@
 
 ## Switching environments
 ```bash
-project_name_env=production project_name run
+user_role_env=production user_role run
 
-# project_name_env in [development,production,testing]
+# user_role_env in [development,production,testing]
 ```

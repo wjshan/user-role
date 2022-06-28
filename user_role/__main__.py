@@ -1,5 +1,5 @@
 # pragma: no cover
-from project_name.cli import cli
+from user_role.cli import cli
 
 main = cli
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from project_name.exceptions.base_errors import UrlNotFindError, ResourceNotFoundError, ValidateError
+from user_role.exceptions.base_errors import UrlNotFindError, ResourceNotFoundError, ValidateError
 from .version import router as version_router
 
 main_router = APIRouter(prefix="/api", responses={

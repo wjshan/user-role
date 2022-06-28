@@ -6,7 +6,7 @@ host = "0.0.0.0"
 debug = false
 
 [default.db]
-name = "project_name"
+name = "user_role"
 host = "127.0.0.1"
 port = "5432"
 user = "postgres"

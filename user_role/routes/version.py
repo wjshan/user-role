@@ -4,9 +4,9 @@ from typing import Literal
 
 from fastapi import APIRouter
 
-from project_name.exceptions.base_errors import ValidateError
-from project_name.serializers.version import VersionReturnSerializer
-from project_name.utils.route import CustomRoute
+from user_role.exceptions.base_errors import ValidateError
+from user_role.serializers.version import VersionReturnSerializer
+from user_role.utils.route import CustomRoute
 
 router = APIRouter(route_class=CustomRoute)
 

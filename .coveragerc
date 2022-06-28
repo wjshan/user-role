@@ -1,8 +1,8 @@
 [run]
-source = project_name
+source = user_role
 
 [report]
 omit =
     */python?.?/*
     */site-packages/nose/*
-    project_name/__main__.py
+    user_role/__main__.py
