@@ -1,0 +1,24 @@
+[development]
+
+[development.db]
+echo = true
+
+[development.server]
+log_level = "debug"
+reload = false
+cors_origins = []
+debug = true
+
+[production]
+
+[production.db]
+echo = false
+
+[production.server]
+log_level = "error"
+reload = false
+
+[testing]
+
+[testing.server]
+cors_origins = []

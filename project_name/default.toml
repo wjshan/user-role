@@ -1,0 +1,18 @@
+[default]
+
+[default.server]
+port = "8080"
+host = "0.0.0.0"
+debug = false
+
+[default.db]
+name = "project_name"
+host = "127.0.0.1"
+port = "5432"
+user = "postgres"
+password = "postgres"
+echo = false
+uri = "@jinja postgresql+asyncpg://{{ this.db.user }}:{{ this.db.password }}@{{ this.db.host }}:{{ this.db.port }}/{{ this.db.name }}"
+
+[default.alembic]
+uri = "@jinja postgresql://{{ this.db.user }}:{{ this.db.password }}@{{ this.db.host }}:{{ this.db.port }}/{{ this.db.name }}"
